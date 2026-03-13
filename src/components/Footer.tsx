@@ -4,7 +4,6 @@ import {
   Phone, 
   MapPin, 
   Github, 
-  Twitter, 
   Linkedin, 
   Heart, 
   ExternalLink,
@@ -104,15 +103,26 @@ export function Footer() {
               Making Mira-Bhayandar greener, one package at a time. Join us in our mission to create a sustainable future through smart waste management and community engagement.
             </p>
             <div className="flex gap-2">
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl hover:bg-primary/10 hover:scale-110 transition-all">
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl hover:bg-primary/10 hover:scale-110 transition-all">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl hover:bg-primary/10 hover:scale-110 transition-all">
-                <Github className="h-5 w-5" />
-              </Button>
+              <a
+                href="https://www.linkedin.com/in/subh-kumar-mishra-76a635374/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl hover:bg-primary/10 transition-all"
+              >
+                <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl hover:scale-110 transition-transform">
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+              </a>
+              <a
+                href="https://github.com/subhmishrasketch/GreenRoute_1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl hover:bg-primary/10 transition-all"
+              >
+                <Button variant="ghost" size="icon" className="h-10 w-10 rounded-xl hover:scale-110 transition-transform">
+                  <Github className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
 
